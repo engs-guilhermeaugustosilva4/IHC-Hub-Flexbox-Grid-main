@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução ao Flexbox</title>
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+  <header>
+    <h1>Introdução ao Flexbox</h1>
+    <p>Aprenda a organizar e alinhar elementos com CSS</p>
+    <a class="voltar" href="index.html">Voltar ao menu principal</a>
+  </header>
+
+  <main>
+    <section class="conteudo">
+      <h2>O que é Flexbox?</h2>
+      <p>Flexbox é um modelo de layout do CSS que facilita a organização dos elementos em uma linha ou coluna. Para usá-lo, coloque <code>display: flex;</code> no elemento que contém os itens.</p>
+    </section>
+
+    <section class="conteudo">
+      <h2>1. display: flex</h2>
+      <p>Por padrão, os itens ficam lado a lado.</p>
+      <div class="exemplo flex-basico">
+        <div class="item">Item 1</div><div class="item">Item 2</div><div class="item">Item 3</div>
+      </div>
+      <pre><code>.container {
+  display: flex;
+}</code></pre>
+    </section>
+
+    <section class="conteudo">
+      <h2>2. flex-direction</h2>
+      <p>Define a direção dos itens: em linha (<code>row</code>) ou em coluna (<code>column</code>).</p>
+      <div class="exemplo flex-coluna">
+        <div class="item">Item 1</div><div class="item">Item 2</div><div class="item">Item 3</div>
+      </div>
+      <pre><code>.container {
+  display: flex;
+  flex-direction: column;
+}</code></pre>
+    </section>
+
+    <section class="conteudo">
+      <h2>3. justify-content</h2>
+      <p>Alinha os itens no eixo principal. Neste exemplo, eles ficam distribuídos com espaço entre eles.</p>
+      <div class="exemplo flex-espaco">
+        <div class="item">Item 1</div><div class="item">Item 2</div><div class="item">Item 3</div>
+      </div>
+      <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+}</code></pre>
+    </section>
+
+    <section class="conteudo">
+      <h2>4. align-items</h2>
+      <p>Alinha os itens no eixo transversal. Aqui, os itens estão centralizados verticalmente.</p>
+      <div class="exemplo flex-alinhar">
+        <div class="item baixo">Item 1</div><div class="item">Item 2</div><div class="item alto">Item 3</div>
+      </div>
+      <pre><code>.container {
+  display: flex;
+  align-items: center;
+}</code></pre>
+    </section>
+
+    <section class="conteudo resumo">
+      <h2>Resumo</h2>
+      <ul>
+        <li><code>display: flex;</code> ativa o Flexbox.</li>
+        <li><code>flex-direction</code> define a direção dos itens.</li>
+        <li><code>justify-content</code> organiza os itens no eixo principal.</li>
+        <li><code>align-items</code> alinha os itens no eixo transversal.</li>
+        <li><code>gap</code> define o espaço entre os itens.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>Hub de Aulas — HTML &amp; CSS</p></footer>
+</body>
+</html>
