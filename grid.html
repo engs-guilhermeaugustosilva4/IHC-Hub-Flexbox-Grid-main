@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS Grid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+    <header>
+        <h1>Introdução ao CSS Grid</h1>
+        <p>Aprenda a organizar elementos em linhas e colunas</p>
+        <a href="index.html" class="voltar">Voltar ao menu principal</a>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>O que é Grid?</h2>
+            <p>
+                CSS Grid é utilizado para organizar elementos
+                em linhas e colunas.
+            </p>
+        </section>
+
+        <section class="conteudo">
+            <h2>1. Display Grid</h2>
+            <p>Cria uma grade com três colunas iguais.</p>
+
+            <div class="exemplo grid-basico">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>2. Grid Template Columns</h2>
+            <p>Define o tamanho das colunas.</p>
+
+            <div class="exemplo grid-colunas">
+                <div class="item">Coluna 1</div>
+                <div class="item">Coluna 2</div>
+                <div class="item">Coluna 3</div>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>3. Gap</h2>
+            <p>Define o espaço entre os elementos.</p>
+
+            <div class="exemplo grid-gap">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>4. Grid Template Rows</h2>
+            <p>Define a altura das linhas.</p>
+
+            <div class="exemplo grid-linhas">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>5. Alinhamento</h2>
+            <p>
+                justify-items alinha horizontalmente e
+                align-items alinha verticalmente.
+            </p>
+
+            <div class="exemplo grid-alinhar">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>Resumo</h2>
+            <ul>
+                <li>display: grid ativa o Grid.</li>
+                <li>grid-template-columns define as colunas.</li>
+                <li>grid-template-rows define as linhas.</li>
+                <li>gap define o espaçamento.</li>
+                <li>fr divide o espaço disponível.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hub de Aulas — HTML e CSS</p>
+    </footer>
+
+</body>
+</html>
